@@ -14,13 +14,14 @@ const getEmailId = async () => {
 
   let emailId = '';
 
-  await page.goto(url, { waitUntil: 'networkidle2' });
+  await page.goto(url, { waitUntil: 'networkidle0' });
+  await page.waitForSelector('#i-email', { visible: true });
   const emailIdBody = await page.evaluate(() =>
     document.getElementById('i-email')
   );
-  const title = await page.evaluate(() => document.title)
-  console.log("Title: " + title);
-  console.log("emailIdBody: " + emailIdBody);
+  const title = await page.evaluate(() => document.title);
+  console.log('Title: ' + title);
+  console.log('emailIdBody: ' + emailIdBody);
 
   if (typeof emailIdBody != 'undefined' && emailIdBody != null) {
     emailId = '_value' in emailIdBody ? emailIdBody._value : 'temp@email.com';
@@ -99,7 +100,9 @@ const createOReillyAccount = async () => {
 };
 
 let accountCreated = false;
-while (!accountCreated) {
+let retryCount = 10;
+while (!accountCreated & (retryCount > 0)) {
+  retryCount--;
   try {
     let response = await createOReillyAccount();
     console.log('Successfully created OReilly account! Enjoy');
