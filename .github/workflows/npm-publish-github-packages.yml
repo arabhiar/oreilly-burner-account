@@ -23,7 +23,7 @@ jobs:
           git config --local user.name  ${{ github.actor }}
           git add .
           git commit -m "Updating account details file from github actions"
-      - uses: ad-m/github-push-action@main
+      - uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
