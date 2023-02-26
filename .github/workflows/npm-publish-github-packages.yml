@@ -6,7 +6,7 @@ name: Node.js Package
 on:
   workflow_dispatch:
   schedule:
-    # Runs at 00:00AM UTC
+    # Runs at 00:30, only on Monday.
     - cron: '30 0 * * 1'
 
 jobs:
@@ -19,3 +19,11 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm test
+      - run: |
+          git config --local user.name  ${{ github.actor }}
+          git add .
+          git commit -m "Updating account details file from github actions"
+      - uses: ad-m/github-push-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
