@@ -1,40 +1,54 @@
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-extra';
 import * as fs from 'fs';
 import axios from 'axios';
+import StealthPlugin from 'puppeteer-extra-plugin-stealth';
+
+import { executablePath } from 'puppeteer';
 
 const TEMP_MAIL_URL = 'https://tempmailo.com/';
 const ORELLY_REGISTER_URL =
   'https://www.oreilly.com/start-trial/api/v1/registration/individual/';
 const PASSWORD = 'Temp@123';
 
+puppeteer.use(StealthPlugin());
+
 const getEmailId = async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  const url = TEMP_MAIL_URL;
+  try {
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox'],
+      ignoreHTTPSErrors: true,
+      executablePath: executablePath(),
+    });
+    const page = await browser.newPage();
+    const url = TEMP_MAIL_URL;
 
-  let emailId = '';
+    let emailId = '';
 
-  await page.goto(url, { waitUntil: 'networkidle0' });
-  await page.waitForSelector('#i-email', { visible: true });
-  const emailIdBody = await page.evaluate(() =>
-    document.getElementById('i-email')
-  );
-  const title = await page.evaluate(() => document.title);
-  console.log('Title: ' + title);
-  console.log('emailIdBody: ' + emailIdBody);
+    await page.goto(url, { waitUntil: 'networkidle0' });
+    await page.waitForSelector('#i-email', { visible: true });
+    const emailIdBody = await page.evaluate(() =>
+      document.getElementById('i-email')
+    );
+    const title = await page.evaluate(() => document.title);
+    console.log('Title: ' + title);
+    console.log('emailIdBody: ' + emailIdBody);
 
-  if (typeof emailIdBody != 'undefined' && emailIdBody != null) {
-    emailId = '_value' in emailIdBody ? emailIdBody._value : 'temp@email.com';
+    if (typeof emailIdBody != 'undefined' && emailIdBody != null) {
+      emailId = '_value' in emailIdBody ? emailIdBody._value : 'temp@email.com';
+    }
+
+    await page.screenshot({
+      path: './screenshot.jpg',
+      type: 'jpeg',
+      fullPage: 'true',
+    });
+
+    await browser.close();
+    return emailId;
+  } catch (err) {
+    throw new Error(err);
   }
-
-  await page.screenshot({
-    path: './screenshot.jpg',
-    type: 'jpeg',
-    fullPage: 'true',
-  });
-
-  await browser.close();
-  return emailId;
 };
 
 const getRandomName = () => {
