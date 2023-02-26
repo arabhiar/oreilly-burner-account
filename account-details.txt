@@ -1,2 +1,3 @@
 
 {"emailId":"qukamuji@brand-app.biz","password":"Temp@123","accountCreatedOn":"26/2/2023"}
+{"emailId":"fyvivupy@lyft.live","password":"Temp@123","accountCreatedOn":"26/2/2023"}
