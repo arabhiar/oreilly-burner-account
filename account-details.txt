@@ -7,3 +7,4 @@
 {"emailId":"jozedeho@finews.biz","password":"Temp@123","accountCreatedOn":"26/2/2023"}
 {"emailId":"pehykima@lyft.live","password":"Temp@123","accountCreatedOn":"26/2/2023"}
 {"emailId":"lyjily@lyft.live","password":"Temp@123","accountCreatedOn":"2/26/2023"}
+{"emailId":"kylutuqy@brand-app.biz","password":"Temp@123","accountCreatedOn":"2/27/2023"}
