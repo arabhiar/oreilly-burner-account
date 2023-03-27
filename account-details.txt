@@ -11,3 +11,4 @@
 {"emailId":"dupoli@finews.biz","password":"Temp@123","accountCreatedOn":"3/6/2023"}
 {"emailId":"paniri@afia.pro","password":"Temp@123","accountCreatedOn":"3/13/2023"}
 {"emailId":"vysuxiko@lyft.live","password":"Temp@123","accountCreatedOn":"3/20/2023"}
+{"emailId":"ryqenesu@clout.wiki","password":"Temp@123","accountCreatedOn":"3/27/2023"}
