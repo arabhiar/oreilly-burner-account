@@ -14,3 +14,4 @@
 {"emailId":"ryqenesu@clout.wiki","password":"Temp@123","accountCreatedOn":"3/27/2023"}
 {"emailId":"malovaky@finews.biz","password":"Temp@123","accountCreatedOn":"4/3/2023"}
 {"emailId":"qygesoke@clout.wiki","password":"Temp@123","accountCreatedOn":"4/10/2023"}
+{"emailId":"korehimo@lyft.live","password":"Temp@123","accountCreatedOn":"4/17/2023"}
