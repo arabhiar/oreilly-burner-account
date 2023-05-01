@@ -16,3 +16,4 @@
 {"emailId":"qygesoke@clout.wiki","password":"Temp@123","accountCreatedOn":"4/10/2023"}
 {"emailId":"korehimo@lyft.live","password":"Temp@123","accountCreatedOn":"4/17/2023"}
 {"emailId":"cymedy@brand-app.biz","password":"Temp@123","accountCreatedOn":"4/24/2023"}
+{"emailId":"gixaxuzy@brand-app.biz","password":"Temp@123","accountCreatedOn":"5/1/2023"}
