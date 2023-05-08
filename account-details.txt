@@ -17,3 +17,4 @@
 {"emailId":"korehimo@lyft.live","password":"Temp@123","accountCreatedOn":"4/17/2023"}
 {"emailId":"cymedy@brand-app.biz","password":"Temp@123","accountCreatedOn":"4/24/2023"}
 {"emailId":"gixaxuzy@brand-app.biz","password":"Temp@123","accountCreatedOn":"5/1/2023"}
+{"emailId":"fucitafi@socam.me","password":"Temp@123","accountCreatedOn":"5/8/2023"}
