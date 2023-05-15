@@ -18,3 +18,4 @@
 {"emailId":"cymedy@brand-app.biz","password":"Temp@123","accountCreatedOn":"4/24/2023"}
 {"emailId":"gixaxuzy@brand-app.biz","password":"Temp@123","accountCreatedOn":"5/1/2023"}
 {"emailId":"fucitafi@socam.me","password":"Temp@123","accountCreatedOn":"5/8/2023"}
+{"emailId":"puvoqo@socam.me","password":"Temp@123","accountCreatedOn":"5/15/2023"}
