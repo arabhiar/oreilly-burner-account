@@ -20,3 +20,4 @@
 {"emailId":"fucitafi@socam.me","password":"Temp@123","accountCreatedOn":"5/8/2023"}
 {"emailId":"puvoqo@socam.me","password":"Temp@123","accountCreatedOn":"5/15/2023"}
 {"emailId":"byfujoce@socam.me","password":"Temp@123","accountCreatedOn":"5/22/2023"}
+{"emailId":"zoxubaxo@socam.me","password":"Temp@123","accountCreatedOn":"5/29/2023"}
