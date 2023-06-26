@@ -23,3 +23,4 @@
 {"emailId":"zoxubaxo@socam.me","password":"Temp@123","accountCreatedOn":"5/29/2023"}
 {"emailId":"jojyvymu@socam.me","password":"Temp@123","accountCreatedOn":"6/5/2023"}
 {"emailId":"gotohepy@socam.me","password":"Temp@123","accountCreatedOn":"6/12/2023"}
+{"emailId":"veduvury@socam.me","password":"Temp@123","accountCreatedOn":"6/26/2023"}
